@@ -1,0 +1,342 @@
+.font-size
+{
+	font-size:35px;
+}
+
+/* Default navbar height */
+.blur-header {
+    padding: 15px 35px;
+    transition: all 0.4s ease;
+}
+
+/* Increase navbar height slightly when scrolling */
+.blur-header.scrolled {
+    padding: 20px 35px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .blur-header {
+        padding: 25px 20px;
+    }
+
+    .blur-header.scrolled {
+        padding: 12px 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .blur-header {
+        padding: 20px 15px;
+    }
+
+    .blur-header.scrolled {
+        padding: 10px 15px;
+    }
+}
+
+ .product-img .cart-overlay {
+    opacity: 0 !important;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+  }
+  .product-entry:hover .cart-overlay {
+    opacity: 1 !important;
+    transform: translateY(0);
+  }
+  .img-zoom-container {
+    transition: transform 0.4s ease-in-out;
+  }
+  .product-entry:hover .img-zoom-container {
+    transform: scale(1.06);
+  }
+  
+.pading
+{
+	padding:7rem;
+}
+
+/* Default navbar style (when user is at the top of the page) */
+.blur-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: all 0.4s ease;
+}
+
+/* Navbar style after scrolling */
+.blur-header.scrolled {
+    background: linear-gradient(
+        135deg,
+        rgba(17, 24, 39, 0.95),
+        rgba(31, 41, 55, 0.95)
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Change text color when navbar is scrolled */
+.blur-header.scrolled .nav-link,
+.blur-header.scrolled .navbar-brand {
+    color: #ffffff !important;
+}
+
+/* Change mobile toggle button border color */
+.blur-header.scrolled .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hide cart overlay by default */
+.cart-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+/* Show cart overlay when product card is hovered */
+.product-entry:hover .cart-overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .cart-overlay {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background: #f7c400;
+    padding: 35px 15px;
+}
+
+/* Main Wrapper */
+.newsletter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Title */
+.newsletter-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.newsletter-title i {
+    font-size: 22px;
+    color: #000;
+}
+
+.newsletter-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    white-space: nowrap;
+}
+
+/* Form */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 0;
+    height: 44px;
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    background: #f5f5f5;
+    border-radius: 25px 0 0 25px;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    height: 44px;
+    border: none;
+    padding: 0 22px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    opacity: 0.9;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .newsletter-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .newsletter-title {
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .newsletter-section {
+        padding: 30px 15px;
+    }
+
+    .newsletter-title h2 {
+        font-size: 1.25rem;
+        white-space: normal;
+    }
+
+    .newsletter-form {
+        max-width: 100%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        height: 42px;
+    }
+
+    .newsletter-form button {
+        padding: 0 16px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 375px) {
+    .newsletter-title {
+        gap: 8px;
+    }
+
+    .newsletter-title i {
+        font-size: 18px;
+    }
+
+    .newsletter-title h2 {
+        font-size: 1.1rem;
+    }
+
+    .newsletter-form input {
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .newsletter-form button {
+        font-size: 13px;
+        padding: 0 14px;
+    }
+}
+
+.colorlib-footer {
+    padding: 7em 0 0 0;
+}
+
+/* Footer Section */
+/* Custom Footer Styling */
+.custom-footer {
+    background-color: #1a1a1a; /* Sleek dark background, change to taste */
+    color: #b3b3b3;
+    padding: 60px 0 30px 0;
+    font-family: 'Poppins', sans-serif; /* Clean font choice */
+    font-size: 14px;
+}
+
+/* Headings styling */
+.custom-footer h4 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph text */
+.footer-text {
+    line-height: 1.8;
+    color: #999999;
+}
+
+/* Links inside the footer */
+.colorlib-footer-links li {
+    margin-bottom: 10px;
+}
+
+.colorlib-footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Interactive link effects */
+.colorlib-footer-links a:hover {
+    color: #337ab7; /* Standard blue, or swap with your brand color */
+    padding-left: 4px; /* Subtle nudge effect */
+}
+
+/* Contact info list shouldn't shift on hover if it's text */
+.colorlib-footer-links.contact-info li {
+    color: #999999;
+    line-height: 1.6;
+}
+
+/* Social media icons */
+.colorlib-social-icons a {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.colorlib-social-icons a:hover {
+    background: #337ab7;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Bottom copyright area */
+.custom-footer .copy {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.custom-footer .copy a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.custom-footer .copy a:hover {
+    text-decoration: underline;
+}
+/* Footer Section */
+
+/* Only apply hover dropdowns on desktop screens (min-width: 992px) */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Prevents a gap that causes the menu to disappear */
+    }
+}

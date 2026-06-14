@@ -1,0 +1,1014 @@
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Nav section start here -->
+    <nav class="navbar navbar-expand-lg navbar-light blur-header sticky-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" id="colorlib-logo" href="index.html">STORE</a>
+
+            <!-- Hamburger Button for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colorlibNavbar" aria-controls="colorlibNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Menu Elements -->
+            <div class="collapse navbar-collapse" id="colorlibNavbar">
+                <ul class="navbar-nav ms-auto text-end menu-1 gap-4 fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dropdown Menu Item -->
+                    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="shop.html" id="shopDropdown" role="button" aria-expanded="false">
+							Shop
+						</a>
+    
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="shopDropdown">
+							<li><a class="dropdown-item" href="product-detail.html">Product Detail</a></li>
+							<li><a class="dropdown-item" href="cart.html">Shipping Cart</a></li>
+							<li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+							<li><a class="dropdown-item" href="order-complete.html">Order Complete</a></li>
+							<li><a class="dropdown-item" href="add-to-wishlist.html">Wishlist</a></li>
+						</ul>
+					</li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="icon-shopping-cart"></i> Cart [0]
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav section end here -->
+
+    <!-- Main Carousel Wrapper start here -->
+    <div id="colorlibCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <!-- Carousel Indicators (Bottom Dots) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#colorlibCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#colorlibCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#colorlibCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Slides -->
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url('img_bg_1.jpg'); background-size: cover; background-position: center; min-height: 500px; position: relative;">
+                <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+                <div class="container h-100 position-relative" style="z-index: 2;">
+                    <div class="row align-items-center h-100 py-5">
+                        <div class="col-md-6 offset-md-1 col-12 text-white slider-text">
+                            <div class="slider-text-inner">
+                                <div class="desc">
+                                    <h1 class="head-1 display-3 fw-bold">Men's</h1>
+                                    <h2 class="head-2 h1">Jeans</h2>
+                                    <h3 class="head-3 h2 fw-light">Collection</h3>
+                                    <p class="category mt-3"><span>New stylish shirts, pants &amp; Accessories</span></p>
+                                    <p class="mt-4"><a href="#" class="btn btn-warning btn-lg">Shop Collection</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url('img_bg_2.jpg'); background-size: cover; background-position: center; min-height: 500px; position: relative;">
+                <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+                <div class="container h-100 position-relative" style="z-index: 2;">
+                    <div class="row align-items-center h-100 py-5">
+                        <div class="col-md-6 offset-md-1 col-12 text-white slider-text">
+                            <div class="slider-text-inner">
+                                <div class="desc">
+                                    <h1 class="head-1 display-3 fw-bold">Huge</h1>
+                                    <h2 class="head-2 h1">Sale</h2>
+                                    <h3 class="head-3 h2 fw-light">45% off</h3>
+                                    <p class="category mt-3"><span>New stylish shirts, pants &amp; Accessories</span></p>
+                                    <p class="mt-4"><a href="#" class="btn btn-warning btn-lg">Shop Collection</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url('img_bg_3.jpg'); background-size: cover; background-position: center; min-height: 500px; position: relative;">
+                <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+                <div class="container h-100 position-relative" style="z-index: 2;">
+                    <!-- Using offset-md-5 to push text to the right for Slide 3 -->
+                    <div class="row align-items-center h-100 py-5">
+                        <div class="col-md-6 offset-md-5 col-12 text-white slider-text">
+                            <div class="slider-text-inner">
+                                <div class="desc">
+                                    <h1 class="head-1 display-3 fw-bold">New</h1>
+                                    <h2 class="head-2 h1">Arrival</h2>
+                                    <h3 class="head-3 h2 fw-light">up to 30% off</h3>
+                                    <p class="category mt-3"><span>New stylish shirts, pants &amp; Accessories</span></p>
+                                    <p class="mt-4"><a href="#" class="btn btn-warning btn-lg">Shop Collection</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main Carousel Wrapper end here -->
+
+    <!-- Fahion section start here -->
+    <div id="colorlib-featured-product" class="py-5">
+        <div class="container">
+            <!-- Main Row: Sets a gap between rows using gy-4 -->
+            <div class="row g-4">
+
+                <!-- Left Column: Large Feature Card (Full width on mobile, half on desktop) -->
+                <div class="col-12 col-md-6">
+                    <a href="shop.html" class="d-block f-product-1 text-decoration-none" style="background-image: url('item-1.jpg'); background-size: cover; background-position: center; min-height: 460px; position: relative;">
+                        <!-- Dark Overlay for text readability -->
+                        <div class="overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.25);"></div>
+                        <!-- Text Box positioning inside the card -->
+                        <div class="desc position-absolute bottom-0 start-0 p-4 text-white z-index-1">
+                            <h2 class="display-6 fw-bold m-0 leading-tight">Fashion <br>for <br>men</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Right Column: Split grid layout -->
+                <div class="col-12 col-md-6">
+                    <div class="row g-4">
+
+                        <!-- Top Left Small Card -->
+                        <div class="col-12 col-sm-6">
+                            <a href="#" class="d-block f-product-2 text-decoration-none" style="background-image: url('item-2.jpg'); background-size: cover; background-position: center; min-height: 218px; position: relative;">
+                                <div class="overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.25);"></div>
+                                <div class="desc position-absolute bottom-0 start-0 p-3 text-white">
+                                    <h2 class="h4 fw-bold m-0">New <br>Arrival <br>Dress</h2>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Top Right Small Card -->
+                        <div class="col-12 col-sm-6">
+                            <a href="#" class="d-block f-product-2 text-decoration-none" style="background-image: url('img_bg_2.jpg'); background-size: cover; background-position: center; min-height: 218px; position: relative;">
+                                <div class="overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.25);"></div>
+                                <div class="desc position-absolute bottom-0 start-0 p-3 text-white">
+                                    <h2 class="h4 fw-bold m-0">Sale <br>20% <br>off</h2>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Bottom Full-Width Small Card -->
+                        <div class="col-12">
+                            <a href="#" class="d-block f-product-2 text-decoration-none" style="background-image: url('item-3.jpg'); background-size: cover; background-position: center; min-height: 218px; position: relative;">
+                                <div class="overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.25);"></div>
+                                <div class="desc position-absolute bottom-0 start-0 p-3 text-white">
+                                    <h2 class="h4 fw-bold m-0">Shoes <br>for <br>men</h2>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- End Inner Row -->
+                </div>
+                <!-- End Right Column -->
+
+            </div>
+            <!-- End Main Row -->
+        </div>
+    </div>
+    <!-- Fahion section end here -->
+
+    <!-- Sale offer start here -->
+    <div class="colorlib-shop py-5">
+        <div class="container">
+
+            <!-- Section Heading Row -->
+            <div class="row mb-5">
+                <div class="col-12 col-md-8 col-lg-6 mx-auto text-center colorlib-heading">
+                    <h2 class="fw-bold mb-3"><span>New Arrival</span></h2>
+                    <p class="text-muted">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+            </div>
+
+            <!-- Product Grid Row -->
+            <div class="row g-4">
+
+                <!-- Product Item 1 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm">
+                        <!-- Image frame wrapper setting absolute bounds -->
+                        <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+
+                            <!-- Zoomable Image Component layer -->
+                            <div class="img-zoom-container w-100 h-100 position-absolute top-0 start-0" style="background-image: url('item-5.jpg'); background-size: cover; background-position: center;"></div>
+
+                            <!-- Badge overlay positioning stays fixed on top -->
+                            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+							<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart">
+										<a href="cart.html" class="text-white h5">
+											<i class="fa fa-shopping-cart"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="product-detail.html" class="text-white h5">
+											<i class="fa fa-eye"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="#" class="text-white h5">
+											<i class="fa fa-heart"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="add-to-wishlist.html" class="text-white h5">
+											<i class="fa fa-chart-bar"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+                        </div>
+                        <div class="desc p-3">
+                            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+                            <p class="price text-warning m-0"><span>$300.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Item 2 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm">
+                        <!-- Image frame wrapper setting absolute bounds -->
+                        <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+
+                            <!-- Zoomable Image Component layer -->
+                            <div class="img-zoom-container w-100 h-100 position-absolute top-0 start-0" style="background-image: url('item-6.jpg'); background-size: cover; background-position: center;"></div>
+
+                            <!-- Badge overlay positioning stays fixed on top -->
+                            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+							<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart">
+										<a href="cart.html" class="text-white h5">
+											<i class="fa fa-shopping-cart"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="product-detail.html" class="text-white h5">
+											<i class="fa fa-eye"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="#" class="text-white h5">
+											<i class="fa fa-heart"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="add-to-wishlist.html" class="text-white h5">
+											<i class="fa fa-chart-bar"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+                        </div>
+                        <div class="desc p-3">
+                            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+                            <p class="price text-warning m-0"><span>$300.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 3 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm">
+                        <!-- Image frame wrapper setting absolute bounds -->
+                        <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+
+                            <!-- Zoomable Image Component layer -->
+                            <div class="img-zoom-container w-100 h-100 position-absolute top-0 start-0" style="background-image: url('item-7.jpg'); background-size: cover; background-position: center;"></div>
+
+                            <!-- Badge overlay positioning stays fixed on top -->
+                            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+							<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart">
+										<a href="cart.html" class="text-white h5">
+											<i class="fa fa-shopping-cart"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="product-detail.html" class="text-white h5">
+											<i class="fa fa-eye"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="#" class="text-white h5">
+											<i class="fa fa-heart"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="add-to-wishlist.html" class="text-white h5">
+											<i class="fa fa-chart-bar"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+                        </div>
+                        <div class="desc p-3">
+                            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+                            <p class="price text-warning m-0"><span>$300.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 4 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm">
+                        <!-- Image frame wrapper setting absolute bounds -->
+                        <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+
+                            <!-- Zoomable Image Component layer -->
+                            <div class="img-zoom-container w-100 h-100 position-absolute top-0 start-0" style="background-image: url('item-8.jpg'); background-size: cover; background-position: center;"></div>
+
+                            <!-- Badge overlay positioning stays fixed on top -->
+                            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+							<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart">
+										<a href="cart.html" class="text-white h5">
+											<i class="fa fa-shopping-cart"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="product-detail.html" class="text-white h5">
+											<i class="fa fa-eye"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="#" class="text-white h5">
+											<i class="fa fa-heart"></i>
+										</a>
+									</span>
+
+									<span>
+										<a href="add-to-wishlist.html" class="text-white h5">
+											<i class="fa fa-chart-bar"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+                        </div>
+                        <div class="desc p-3">
+                            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+                            <p class="price text-warning m-0"><span>$300.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Product Grid Row -->
+        </div>
+    </div>
+	
+	
+    <!-- Sale offer start here -->
+	<!-- Main Banner Wrapper with dark overlay background styling -->
+<div id="colorlib-intro" class="colorlib-intro position-relative text-white py-5" style="background-image: url('cover-img-1.jpg'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 450px;">
+  
+  <!-- Semi-transparent overlay to ensure text readability -->
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+  
+  <div class="container position-relative h-100 z-1 py-4">
+    <div class="row align-items-center h-100">
+      
+      <!-- Container restricting max layout width on wide viewports -->
+      <div class="col-12 col-lg-8 col-xl-7">
+        <div class="intro-desc">
+          
+          <!-- Flex grid splitting the sale percentage badge from descriptive texts -->
+          <div class="text-salebox d-flex flex-column flex-md-row align-items-center align-items-md-start gap-4 text-center text-md-start">
+            
+            <!-- Left Side: Sale % Geometric Badge -->
+            <div class="text-lefts flex-shrink-0">
+              <div class="sale-box p-3 rounded text-center" style="min-width: 140px;">
+                <div class="sale-box-top d-flex justify-content-center align-items-start lh-1">
+                  <h2 class="number display-2 fw-bold m-0">45</h2>
+                  <div class="d-flex flex-column ms-1 mt-2 text-uppercase fw-semibold" style="font-size: 0.9rem; letter-spacing: 1px;">
+                    <span class="sup-1">%</span>
+                    <span class="sup-2">Off</span>
+                  </div>
+                </div>
+                <h2 class="text-sale h5 text-uppercase fs-1 fw-bold m-0 mt-2 tracking-wider">Sale</h2>
+              </div>
+            </div>
+            
+            <!-- Right Side: Promotional Details Content -->
+            <div class="text-rights">
+              <h3 class="title h2 fw-bold mb-3">Just hurry up limited offer!</h3>
+              <p class="text-white-50 mb-4 leading-relaxed">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              
+              <!-- Call to Action Buttons layout -->
+              <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+                <a href="shop.html" class="btn btn-warning btn-lg px-4 fw-medium">Shop Now</a> 
+                <a href="#" class="btn btn-outline-warning btn-lg px-4 fw-medium">Read more</a>
+              </div>
+            </div>
+
+          </div> <!-- End text-salebox -->
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    <!-- Sale offer end here -->
+
+<!-- Our Product Section Start Here -->
+<div class="colorlib-shop pading">
+  <div class="container">
+    
+    <!-- Section Heading Row -->
+    <div class="row mb-5">
+      <div class="col-12 col-md-8 col-lg-6 mx-auto text-center colorlib-heading">
+        <h2 class="fw-bold mb-3"><span>Our Products</span></h2>
+        <p class="text-muted">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+    </div>
+
+    <!-- Product Multi-Row Grid -->
+    <div class="row g-4">
+      
+      <!-- Item 1 -->
+      <div class="col-12 col-sm-6 col-lg-3 text-center">
+        <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm position-relative group">
+          <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+            <div class="w-100 h-100 position-absolute top-0 start-0 transition" style="background-image: url('item-9.jpg'); background-size: cover; background-position: center;"></div>
+            
+            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning text-dark px-3 py-2 fw-bold">Sale</span></p>
+				<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class=""> <a href="cart.html" class="text-light"> <i class="fa fa-shopping-cart"> </i> </a> </span>
+										<span> <a href="product-detail.html" class="text-light"> <i class="fa fa-eye"></i> </a> </span> <span> <a href="#" class="text-white h5"> <i class="fa fa-heart"></i> </a> </span>
+									<span> <a href="add-to-wishlist.html" class="text-light"> <i class="fa fa-chart-bar"></i> </a> </span>
+								</p>
+				</div>
+            
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2 opacity-0 group-hover-opacity-100 transition-all duration-300">
+              <p class="m-0 d-flex justify-content-center gap-3">
+                <span><a href="cart.html" class="text-white h5 text-decoration-none"><i class="icon-shopping-cart"></i></a></span> 
+                <span><a href="product-detail.html" class="text-white h5 text-decoration-none"><i class="icon-eye"></i></a></span> 
+                <span><a href="#" class="text-white h5 text-decoration-none"><i class="icon-heart3"></i></a></span>
+                <span><a href="add-to-wishlist.html" class="text-white h5 text-decoration-none"><i class="icon-bar-chart"></i></a></span>
+              </p>
+            </div>
+          </div>
+          <div class="desc p-3">
+            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+            <p class="price m-0">
+              <span class="text-warning">$199.00</span> 
+              <span class="text-muted text-decoration-line-through small ms-2">$300.00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-12 col-sm-6 col-lg-3 text-center">
+        <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm position-relative group">
+          <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+            <div class="w-100 h-100 position-absolute top-0 start-0 transition" style="background-image: url('item-10.jpg'); background-size: cover; background-position: center;"></div>
+            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+			<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart"> <a href="cart.html" class="text-white"> <i class="fa fa-shopping-cart"> </i> </a> </span>
+										<span> <a href="product-detail.html" class="text-white"> <i class="fa fa-eye"></i> </a> </span> <span> <a href="#" class="text-white h5"> <i class="fa fa-heart"></i> </a> </span>
+									<span> <a href="add-to-wishlist.html" class="text-white"> <i class="fa fa-chart-bar"></i> </a> </span>
+								</p>
+				</div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2 opacity-0 group-hover-opacity-100 transition-all duration-300">
+              <p class="m-0 d-flex justify-content-center gap-3">
+                <span><a href="cart.html" class="text-white h5 text-decoration-none"><i class="icon-shopping-cart"></i></a></span> 
+                <span><a href="product-detail.html" class="text-white h5 text-decoration-none"><i class="icon-eye"></i></a></span> 
+                <span><a href="#" class="text-white h5 text-decoration-none"><i class="icon-heart3"></i></a></span>
+                <span><a href="add-to-wishlist.html" class="text-white h5 text-decoration-none"><i class="icon-bar-chart"></i></a></span>
+              </p>
+            </div>
+          </div>
+          <div class="desc p-3">
+            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+            <p class="price text-warning m-0"><span>$300.00</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-12 col-sm-6 col-lg-3 text-center">
+        <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm position-relative group">
+          <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+            <div class="w-100 h-100 position-absolute top-0 start-0 transition" style="background-image: url('item-11.jpg'); background-size: cover; background-position: center;"></div>
+            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+			<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart"> <a href="cart.html" class="text-white"> <i class="fa fa-shopping-cart"> </i> </a> </span>
+										<span> <a href="product-detail.html" class="text-white"> <i class="fa fa-eye"></i> </a> </span> <span> <a href="#" class="text-white"> <i class="fa fa-heart"></i> </a> </span>
+									<span> <a href="add-to-wishlist.html" class="text-white"> <i class="fa fa-chart-bar"></i> </a> </span>
+								</p>
+				</div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2 opacity-0 group-hover-opacity-100 transition-all duration-300">
+              <p class="m-0 d-flex justify-content-center gap-3">
+                <span><a href="cart.html" class="text-white h5 text-decoration-none"><i class="icon-shopping-cart"></i></a></span> 
+                <span><a href="product-detail.html" class="text-white h5 text-decoration-none"><i class="icon-eye"></i></a></span> 
+                <span><a href="#" class="text-white h5 text-decoration-none"><i class="icon-heart3"></i></a></span>
+                <span><a href="add-to-wishlist.html" class="text-white h5 text-decoration-none"><i class="icon-bar-chart"></i></a></span>
+              </p>
+            </div>
+          </div>
+          <div class="desc p-3">
+            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+            <p class="price text-warning m-0"><span>$300.00</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-12 col-sm-6 col-lg-3 text-center">
+        <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm position-relative group">
+          <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+            <div class="w-100 h-100 position-absolute top-0 start-0 transition" style="background-image: url('item-12.jpg'); background-size: cover; background-position: center;"></div>
+            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+			<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart"> <a href="cart.html" class="text-white"> <i class="fa fa-shopping-cart"> </i> </a> </span>
+										<span> <a href="product-detail.html" class="text-white"> <i class="fa fa-eye"></i> </a> </span> <span> <a href="#" class="text-white"> <i class="fa fa-heart"></i> </a> </span>
+									<span> <a href="add-to-wishlist.html" class="text-white"> <i class="fa fa-chart-bar"></i> </a> </span>
+								</p>
+				</div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2 opacity-0 group-hover-opacity-100 transition-all duration-300">
+              <p class="m-0 d-flex justify-content-center gap-3">
+                <span><a href="cart.html" class="text-white h5 text-decoration-none"><i class="icon-shopping-cart"></i></a></span> 
+                <span><a href="product-detail.html" class="text-white h5 text-decoration-none"><i class="icon-eye"></i></a></span> 
+                <span><a href="#" class="text-white h5 text-decoration-none"><i class="icon-heart3"></i></a></span>
+                <span><a href="add-to-wishlist.html" class="text-white h5 text-decoration-none"><i class="icon-bar-chart"></i></a></span>
+              </p>
+            </div>
+          </div>
+          <div class="desc p-3">
+            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+            <p class="price text-warning m-0"><span>$300.00</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="col-12 col-sm-6 col-lg-3 text-center">
+        <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm position-relative group">
+          <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+            <div class="w-100 h-100 position-absolute top-0 start-0 transition" style="background-image: url('item-13.jpg'); background-size: cover; background-position: center;"></div>
+            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+			<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart"> <a href="cart.html" class="text-white"> <i class="fa fa-shopping-cart"> </i> </a> </span>
+										<span> <a href="product-detail.html" class="text-white"> <i class="fa fa-eye"></i> </a> </span> <span> <a href="#" class="text-white"> <i class="fa fa-heart"></i> </a> </span>
+									<span> <a href="add-to-wishlist.html" class="text-white"> <i class="fa fa-chart-bar"></i> </a> </span>
+								</p>
+				</div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2 opacity-0 group-hover-opacity-100 transition-all duration-300">
+              <p class="m-0 d-flex justify-content-center gap-3">
+                <span><a href="cart.html" class="text-white h5 text-decoration-none"><i class="icon-shopping-cart"></i></a></span> 
+                <span><a href="product-detail.html" class="text-white h5 text-decoration-none"><i class="icon-eye"></i></a></span> 
+                <span><a href="#" class="text-white h5 text-decoration-none"><i class="icon-heart3"></i></a></span>
+                <span><a href="add-to-wishlist.html" class="text-white h5 text-decoration-none"><i class="icon-bar-chart"></i></a></span>
+              </p>
+            </div>
+          </div>
+          <div class="desc p-3">
+            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+            <p class="price text-warning m-0"><span>$300.00</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="col-12 col-sm-6 col-lg-3 text-center">
+        <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm position-relative group">
+          <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+            <div class="w-100 h-100 position-absolute top-0 start-0 transition" style="background-image: url('item-14.jpg'); background-size: cover; background-position: center;"></div>
+            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning y-2">New</span></p>
+			<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart"> <a href="cart.html" class="text-white"> <i class="fa fa-shopping-cart"> </i> </a> </span>
+										<span> <a href="product-detail.html" class="text-white"> <i class="fa fa-eye"></i> </a> </span> <span> <a href="#" class="text-white"> <i class="fa fa-heart"></i> </a> </span>
+									<span> <a href="add-to-wishlist.html" class="text-white"> <i class="fa fa-chart-bar"></i> </a> </span>
+								</p>
+				</div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2 opacity-0 group-hover-opacity-100 transition-all duration-300">
+              <p class="m-0 d-flex justify-content-center gap-3">
+                <span><a href="cart.html" class="text-white h5 text-decoration-none"><i class="icon-shopping-cart"></i></a></span> 
+                <span><a href="product-detail.html" class="text-white h5 text-decoration-none"><i class="icon-eye"></i></a></span> 
+                <span><a href="#" class="text-white h5 text-decoration-none"><i class="icon-heart3"></i></a></span>
+                <span><a href="add-to-wishlist.html" class="text-white h5 text-decoration-none"><i class="icon-bar-chart"></i></a></span>
+              </p>
+            </div>
+          </div>
+          <div class="desc p-3">
+            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+            <p class="price text-warning m-0"><span>$300.00</span></p>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- item 7 -->
+		      <div class="col-12 col-sm-6 col-lg-3 text-center">
+        <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm position-relative group">
+          <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+            <div class="w-100 h-100 position-absolute top-0 start-0 transition" style="background-image: url('item-15.jpg'); background-size: cover; background-position: center;"></div>
+            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+			<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart"> <a href="cart.html" class="text-white"> <i class="fa fa-shopping-cart"> </i> </a> </span>
+										<span> <a href="product-detail.html" class="text-white"> <i class="fa fa-eye"></i> </a> </span> <span> <a href="#" class="text-white"> <i class="fa fa-heart"></i> </a> </span>
+									<span> <a href="add-to-wishlist.html" class="text-white"> <i class="fa fa-chart-bar"></i> </a> </span>
+								</p>
+				</div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2 opacity-0 group-hover-opacity-100 transition-all duration-300">
+              <p class="m-0 d-flex justify-content-center gap-3">
+                <span><a href="cart.html" class="text-white h5 text-decoration-none"><i class="icon-shopping-cart"></i></a></span> 
+                <span><a href="product-detail.html" class="text-white h5 text-decoration-none"><i class="icon-eye"></i></a></span> 
+                <span><a href="#" class="text-white h5 text-decoration-none"><i class="icon-heart3"></i></a></span>
+                <span><a href="add-to-wishlist.html" class="text-white h5 text-decoration-none"><i class="icon-bar-chart"></i></a></span>
+              </p>
+            </div>
+          </div>
+          <div class="desc p-3">
+            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+            <p class="price text-warning m-0"><span>$300.00</span></p>
+          </div>
+        </div>
+      </div>
+
+
+		<!-- item 8 -->
+		      <div class="col-12 col-sm-6 col-lg-3 text-center">
+        <div class="product-entry border rounded overflow-hidden bg-white h-100 p-2 shadow-sm position-relative group">
+          <div class="position-relative rounded overflow-hidden" style="min-height: 300px;">
+            <div class="w-100 h-100 position-absolute top-0 start-0 transition" style="background-image: url('item-16.jpg'); background-size: cover; background-position: center;"></div>
+            <p class="tag position-absolute top-0 start-0 m-3 z-3"><span class="badge bg-warning px-3 py-2">New</span></p>
+			<div class="cart-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2">
+								<p class="m-0 d-flex justify-content-center gap-3">
+									<span class="addtocart"> <a href="cart.html" class="text-white"> <i class="fa fa-shopping-cart"> </i> </a> </span>
+										<span> <a href="product-detail.html" class="text-white"> <i class="fa fa-eye"></i> </a> </span> <span> <a href="#" class="text-white"> <i class="fa fa-heart"></i> </a> </span>
+									<span> <a href="add-to-wishlist.html" class="text-white"> <i class="fa fa-chart-bar"></i> </a> </span>
+								</p>
+				</div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 z-2 opacity-0 group-hover-opacity-100 transition-all duration-300">
+              <p class="m-0 d-flex justify-content-center gap-3">
+                <span><a href="cart.html" class="text-white h5 text-decoration-none"><i class="icon-shopping-cart"></i></a></span> 
+                <span><a href="product-detail.html" class="text-white h5 text-decoration-none"><i class="icon-eye"></i></a></span> 
+                <span><a href="#" class="text-white h5 text-decoration-none"><i class="icon-heart3"></i></a></span>
+                <span><a href="add-to-wishlist.html" class="text-white h5 text-decoration-none"><i class="icon-bar-chart"></i></a></span>
+              </p>
+            </div>
+          </div>
+          <div class="desc p-3">
+            <h3 class="h5 my-2"><a href="shop.html" class="text-decoration-none text-dark fw-semibold">Floral Dress</a></h3>
+            <p class="price text-warning m-0"><span>$300.00</span></p>
+          </div>
+        </div>
+      </div>
+	</div>				
+	</div>				
+</div>				
+
+<!-- Our Product Section End Here -->
+
+
+<!-- Review Section Start Here -->
+<div id="colorlib-testimony" class="bg-light py-5">
+  <div class="container">
+    
+    <!-- Section Heading Row -->
+    <div class="row mb-4">
+      <div class="col-12 col-md-8 col-lg-6 mx-auto text-center colorlib-heading">
+        <h2 class="fw-bold mb-3"><span>Our Satisfied Customer says</span></h2>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 Testimonials Carousel Slider Container -->
+    <div id="testimonialCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+      
+      <!-- Carousel Indicators / Bottom Navigation Dots -->
+      <div class="carousel-indicators position-relative mt-4 d-none">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides Inner Box -->
+      <div class="carousel-inner col-12 col-md-10 col-lg-8 mx-auto">
+        
+        <!-- Customer Slide 1 (Alysha Myers) -->
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div class="testimony text-center py-3 px-4">
+            <!-- User Avatar Circle -->
+            <div class="img-user rounded-circle mx-auto mb-3 shadow-sm" style="background-image: url('person1.jpg'); background-size: cover; background-position: center; width: 90px; height: 90px;"></div>
+            <h4 class="user fw-bold mb-1 text-dark fs-5">Alysha Myers</h4>
+            <span class="d-block small text-muted text-uppercase tracking-wider mb-3">Miami Florida, USA</span>
+            <blockquote class="blockquote col-lg-9 mx-auto">
+              <p class="fs-6 text-secondary leading-relaxed">" A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Customer Slide 2 (James Fisher) -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="testimony text-center py-3 px-4">
+            <div class="img-user rounded-circle mx-auto mb-3 shadow-sm" style="background-image: url('person2.jpg'); background-size: cover; background-position: center; width: 90px; height: 90px;"></div>
+            <h4 class="user fw-bold mb-1 text-dark fs-5">James Fisher</h4>
+            <span class="d-block small text-muted text-uppercase tracking-wider mb-3">New York, USA</span>
+            <blockquote class="blockquote col-lg-9 mx-auto">
+              <p class="fs-6 text-secondary leading-relaxed">One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Customer Slide 3 (Jacob Webb) -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="testimony text-center py-3 px-4">
+            <div class="img-user rounded-circle mx-auto mb-3 shadow-sm" style="background-image: url('person3.jpg'); background-size: cover; background-position: center; width: 90px; height: 90px;"></div>
+            <h4 class="user fw-bold mb-1 text-dark fs-5">Jacob Webb</h4>
+            <span class="d-block small text-muted text-uppercase tracking-wider mb-3">Athens, Greece</span>
+            <blockquote class="blockquote col-lg-9 mx-auto">
+              <p class="fs-6 text-secondary leading-relaxed">Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+            </blockquote>
+          </div>
+        </div>
+
+      </div> <!-- End Carousel Inner -->
+
+      <!-- Side Left Arrow Navigation Button -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <!-- Side Right Arrow Navigation Button -->
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div> <!-- End Testimonial Carousel -->
+    
+  </div>
+</div>
+
+<!-- Review Section End Here -->
+
+
+<!-- Blog Section Start Here -->
+	<div class="colorlib-blog pading">
+  <div class="container">
+    
+    <!-- Section Heading Row -->
+    <div class="row mb-5">
+      <!-- Centered layout via mx-auto utility with line-height adjustment -->
+      <div class="col-12 col-md-8 mx-auto text-center colorlib-heading">
+        <h2 class="fw-bold mb-3">Recent Blog</h2>
+        <p class="text-muted lh-lg">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+      </div>
+    </div>
+
+    <!-- Blog Grid Row (g-4 manages layout gaps responsively) -->
+    <div class="row g-4">
+      
+      <!-- Blog Post Card 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="article-entry border rounded bg-white h-100 overflow-hidden shadow-sm transition">
+          <!-- Clickable Blog Background Image Window Container -->
+          <a href="blog.html" class="d-block w-100 position-relative" style="background-image: url('blog-1.jpg'); background-size: cover; background-position: center; min-height: 250px;">
+            <!-- absolute-positioned overlay for design depth if needed -->
+          </a>
+          
+          <!-- Content Panel -->
+          <div class="desc p-4">
+            <!-- Flexbox metadata panel distributing items across layout bounds -->
+            <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+              <p class="admin small text-muted m-0">
+                <span class="fw-semibold text-dark">Posted by:</span> Noah Henderson
+              </p>
+              <!-- Styled Date Badge -->
+              <p class="m-0 bg-warning text-light rounded px-2 py-1 text-center border shadow-sm" style="min-width: 60px;">
+                <span class="day d-block fw-bold lh-1 small">02</span>
+                <span class="text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px;">Mar</span>
+              </p>
+            </div>
+            
+            <h3 class="h4 mb-2">
+              <a href="blog.html" class="text-decoration-none text-dark fw-bold link-primary">Openning Branches</a>
+            </h3>
+            <p class="text-secondary text-muted lh-base mb-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Blog Post Card 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="article-entry border rounded bg-white h-100 overflow-hidden shadow-sm transition">
+          <a href="blog.html" class="d-block w-100 position-relative" style="background-image: url('blog-2.jpg'); background-size: cover; background-position: center; min-height: 250px;"></a>
+          <div class="desc p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+              <p class="admin small text-muted m-0">
+                <span class="fw-semibold text-dark">Posted by:</span> Noah Henderson
+              </p>
+              <p class="meta m-0 bg-warning rounded px-2 py-1 text-center border shadow-sm" style="min-width: 60px;">
+                <span class="day d-block fw-bold text-light lh-1 small">02</span>
+                <span class="month text-uppercase text-light fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px;">Mar</span>
+              </p>
+            </div>
+            <h3 class="h4 mb-2">
+              <a href="blog.html" class="text-decoration-none text-dark fw-bold link-primary">Openning Branches</a>
+            </h3>
+            <p class="text-secondary text-muted lh-base mb-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Blog Post Card 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+        <article class="article-entry border rounded bg-white h-100 overflow-hidden shadow-sm transition">
+          <a href="blog.html" class="d-block w-100 position-relative" style="background-image: url('blog-3.jpg'); background-size: cover; background-position: center; min-height: 250px;"></a>
+          <div class="desc p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+              <p class="admin small text-muted m-0">
+                <span class="fw-semibold text-dark">Posted by:</span> Noah Henderson
+              </p>
+              <p class="meta m-0 bg-warning text-light rounded px-2 py-1 text-center border shadow-sm" style="min-width: 60px;">
+                <span class="day d-block fw-bold lh-1 small">02</span>
+                <span class="month text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px;">Mar</span>
+              </p>
+            </div>
+            <h3 class="h4 mb-2">
+              <a href="blog.html" class="text-decoration-none text-dark fw-bold link-primary">Openning Branches</a>
+            </h3>
+            <p class="text-secondary text-muted lh-base mb-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+          </div>
+        </article>
+      </div>
+
+    </div> <!-- End Blog Grid Row -->
+  </div>
+</div>
+<!-- Blog Section End Here -->
+
+<!-- Newsletter Section Start -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-wrapper">
+
+            <div class="newsletter-title">
+                <i class="fa-regular fa-paper-plane"></i>
+                <h2>Sign Up for a Newsletter</h2>
+            </div>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+<!-- Newsletter Section End -->
+
+<footer id="colorlib-footer" class="custom-footer" role="contentinfo">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 pb-5">
+            
+            <div class="col colorlib-widget">
+                <h4>About Store</h4>
+                <p class="footer-text">Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+                <ul class=" list-unstyled d-flex gap-3 mt-3">
+                    <li><a href="#"><i class="fab fa-twitter text-warning"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook text-warning"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin text-warning"></i></a></li>
+                    <li><a href="#"><i class="fab fa-dribbble text-warning"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col colorlib-widget">
+                <h4>Customer Care</h4>
+                <ul class="colorlib-footer-links list-unstyled">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Returns/Exchange</a></li>
+                    <li><a href="#">Gift Voucher</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Special</a></li>
+                    <li><a href="#">Customer Services</a></li>
+                    <li><a href="#">Site maps</a></li>
+                </ul>
+            </div>
+
+            <div class="col colorlib-widget">
+                <h4>Information</h4>
+                <ul class="colorlib-footer-links list-unstyled">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+
+            <div class="col colorlib-widget">
+                <h4>News</h4>
+                <ul class="colorlib-footer-links list-unstyled">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Exhibitions</a></li>
+                </ul>
+            </div>
+
+            <div class="col colorlib-widget">
+                <h4>Contact Info</h4>
+                <ul class="colorlib-footer-links list-unstyled contact-info">
+                    <li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+                    <li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+                    <li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+                    <li><a href="#">yoursite.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="copy border-top pt-4 mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-text mb-0">
+                        <span class="d-block d-md-inline me-md-2">Copyright © 2026 All rights reserved | This template is made with <i class="fa fa-heart text-danger" aria-hidden="true"></i> by <a href="#" target="_blank" class="fw-bold">Colorlib</a></span> 
+                        <span class="d-block d-md-inline">Demo Images: <a href="#" target="_blank">Unsplash</a>, <a href="#" target="_blank">Pexels.com</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".blur-header");
+
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+document.write(new Date().getFullYear());
+</script>
+</body>
+
+</html>
